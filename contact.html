@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Om Singh </title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; 
+    color: #003c30; 
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2ebf2; 
+    padding: 20px;
+    color: #003c30; 
+}
+
+.header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navbar a {
+    color: #003c30; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .navbar a.active {
+    color: #00796b; 
+}
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #00796b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #00796b; 
+}
+
+.contact-item a {
+    color: #003c30; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: #00796b; 
+}
+
+.contact-form {
+    margin-top: 40px;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: #00796b; 
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    color: #003c30;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f1f1f1; 
+    color: #003c30; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00796b; 
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #00796b; 
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #004d40; 
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <i class="fa-solid fa-bars menu-icon"></i>
+        <nav class="navbar">
+            <a href="portfolionew.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="edu.html">Education</a>
+            <a href="pro.html">Project</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch with me, feel free to reach out through any of the following methods:</p>
+
+        
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:omsingh24xyz@gmail.com">MAIL</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/om-singh-923059285/" target="_blank">Linkedln</a>
+            </div>
+        </div>
+
+        
+        <div class="contact-form">
+            <h2>Or, send me a message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
